@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>B-tech HELP</title>
+</head>
+
+<body>
+
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand font-weight-bold text-white" href="index.html">B-tech HELP</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link text-white" href="index.html">Inicio</a>
+            <a class="nav-item nav-link text-white" href="cad_chamado.html">Chamados</a>
+            <a class="nav-item nav-link text-white" href="clientes.html">Clientes</a>
+            <a class="nav-item nav-link text-white" href="sobre.html">Sobre</a>
+          </div>
+        </div>
+    </nav>
+    </br>
+    <div class="container">
+        <!-- Título -->
+        <h3> Cadastro de Chamados </h3>
+
+        </br>
+
+        <!-- Formulário para cadastro -->
+        <form>
+            
+            <!-- Este campo é para selecionar a empresa que solicitou o chamado. -->
+            <div class="form-group">
+              <label for="empresa">Empresa: </label>
+              <select class="form-control" id="empresa">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+
+            <!-- Este campo é para selecionar o funcionário que está registrando o chamado,
+            conforme a empresa que foi selecionada no campo acima. -->
+            <div class="form-group">
+              <label for="funcionario">Funcionário: </label>
+              <select class="form-control" id="funcionario">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+
+            <!-- Este campo é para informar o tipo do problema que a pessoa está enfrentando. -->
+            <div class="form-group">
+                <label for="tituloChamado">Tipo do Problema: </label>
+                <input type="text" class="form-control" id="problema" placeholder="Informe o tipo do problema...">
+            </div>
+
+            <!-- Este campo é para descrever a situação do chamado. -->
+            <div class="form-group">
+              <label for="descricaoChamado">Descrição: </label>
+              <textarea class="form-control" id="descricaoChamado" rows="3" placeholder="Descreva o que está ocorrendo..."></textarea>
+            </div>
+
+            <!-- Esta div é para selecionar em qual situação se encontra o chamado. -->
+            <div class="form-group col-xs-12 col-md-12 col-lg-12">
+                <label>Situação</label>
+                </br>
+                <div class="btn-group" data-toggle="buttons" style="width: 100%;">
+                    <label class="btn btn-secondary" style="width: 33.33%;">
+                        <input type="radio" name="radio_modalidade" value="aguardando" autocomplete="off"> Aguardando
+                    </label>
+                    <label class="btn btn-primary" style="width: 33.33%;">
+                        <input type="radio" name="radio_modalidade" value="em_andamento" autocomplete="off"> Em andamento
+                    </label>
+                    <label class="btn btn-success" style="width: 33.33%;">
+                        <input type="radio" name="radio_modalidade" value="finalizado" autocomplete="off"> Finalizado
+                    </label>
+                </div>
+            </div>
+
+        </form>
+        </br>
+
+        <button type="button" class="btn btn-info">Cadastrar</button>
+    </div>
+
+</body>
+</html>
+
